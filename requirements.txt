@@ -1,0 +1,7 @@
+# Install the CPU PyTorch / TorchVision wheels first, as shown in README.md.
+numpy==1.26.4
+matplotlib==3.10.9
+Pillow==12.3.0
+nbformat==5.10.4
+nbclient==0.10.2
+ipykernel==6.30.1

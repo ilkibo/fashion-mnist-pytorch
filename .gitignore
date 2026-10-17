@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.fashion/
+fashion_outputs/
+*.pyc
+*.pth
+*.pt
+.env

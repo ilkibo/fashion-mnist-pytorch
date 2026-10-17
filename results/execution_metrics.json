@@ -1,0 +1,292 @@
+{
+  "dataset": "Fashion-MNIST",
+  "official_repository": "https://github.com/zalandoresearch/fashion-mnist",
+  "download_mirror": "https://raw.githubusercontent.com/zalandoresearch/fashion-mnist/master/data/fashion/",
+  "source_integrity": {
+    "train-images-idx3-ubyte.gz": {
+      "bytes": 26421880,
+      "md5": "8d4fb7e6c68d591d4c3dfef9ec88bf0d",
+      "sha256": "3aede38d61863908ad78613f6a32ed271626dd12800ba2636569512369268a84"
+    },
+    "train-labels-idx1-ubyte.gz": {
+      "bytes": 29515,
+      "md5": "25c81989df183df01b3e8a0aad5dffbe",
+      "sha256": "a04f17134ac03560a47e3764e11b92fc97de4d1bfaf8ba1a3aa29af54cc90845"
+    },
+    "t10k-images-idx3-ubyte.gz": {
+      "bytes": 4422102,
+      "md5": "bef4ecab320f06d8554ea6380940ec79",
+      "sha256": "346e55b948d973a97e58d2351dde16a484bd415d4595297633bb08f03db6a073"
+    },
+    "t10k-labels-idx1-ubyte.gz": {
+      "bytes": 5148,
+      "md5": "bb300cfdad3c16e7a12a480ee83cd310",
+      "sha256": "67da17c76eaffca5446c3361aaab5c3cd6d1c2608764d35dfb1850b086bf8dd5"
+    }
+  },
+  "training_examples": 60000,
+  "course_validation_examples": 10000,
+  "original_image_shape": [
+    1,
+    28,
+    28
+  ],
+  "transformed_image_shape": [
+    1,
+    16,
+    16
+  ],
+  "model": "CNN_batch (original IBM constructor)",
+  "seed": 0,
+  "device": "cpu",
+  "batch_size": 100,
+  "optimizer": "SGD",
+  "learning_rate": 0.1,
+  "epochs": 5,
+  "epoch_records": [
+    {
+      "epoch": 1,
+      "training_examples": 60000,
+      "validation_examples": 10000,
+      "training_batch_cost_sum": 297.8554274737835,
+      "training_mean_ce": 0.49642571245630585,
+      "validation_mean_ce": 0.446758049428463,
+      "validation_correct": 8584,
+      "validation_accuracy": 0.8584,
+      "seconds": 32.51270732800003
+    },
+    {
+      "epoch": 2,
+      "training_examples": 60000,
+      "validation_examples": 10000,
+      "training_batch_cost_sum": 210.16223172843456,
+      "training_mean_ce": 0.3502703862140576,
+      "validation_mean_ce": 0.4058388754725456,
+      "validation_correct": 8621,
+      "validation_accuracy": 0.8621,
+      "seconds": 30.747466830998746
+    },
+    {
+      "epoch": 3,
+      "training_examples": 60000,
+      "validation_examples": 10000,
+      "training_batch_cost_sum": 186.92911012470722,
+      "training_mean_ce": 0.311548516874512,
+      "validation_mean_ce": 0.3438349325954914,
+      "validation_correct": 8793,
+      "validation_accuracy": 0.8793,
+      "seconds": 32.375766418999774
+    },
+    {
+      "epoch": 4,
+      "training_examples": 60000,
+      "validation_examples": 10000,
+      "training_batch_cost_sum": 175.1875131726265,
+      "training_mean_ce": 0.29197918862104416,
+      "validation_mean_ce": 0.3207872052490711,
+      "validation_correct": 8881,
+      "validation_accuracy": 0.8881,
+      "seconds": 30.43246536800143
+    },
+    {
+      "epoch": 5,
+      "training_examples": 60000,
+      "validation_examples": 10000,
+      "training_batch_cost_sum": 166.83291986584663,
+      "training_mean_ce": 0.2780548664430777,
+      "validation_mean_ce": 0.34444504246115687,
+      "validation_correct": 8805,
+      "validation_accuracy": 0.8805,
+      "seconds": 31.03455997600031
+    }
+  ],
+  "elapsed_training_validation_seconds": 157.75493985499998,
+  "final_correct": 8805,
+  "final_accuracy": 0.8805,
+  "majority_baseline_accuracy": 0.10000000149011612,
+  "nominal_wilson_95_accuracy": [
+    0.8739957787515786,
+    0.8867119984883363
+  ],
+  "classes": [
+    "T-shirt/top",
+    "Trouser",
+    "Pullover",
+    "Dress",
+    "Coat",
+    "Sandal",
+    "Shirt",
+    "Sneaker",
+    "Bag",
+    "Ankle boot"
+  ],
+  "confusion_matrix": [
+    [
+      889,
+      12,
+      20,
+      11,
+      5,
+      1,
+      50,
+      0,
+      12,
+      0
+    ],
+    [
+      1,
+      986,
+      1,
+      7,
+      2,
+      0,
+      0,
+      0,
+      3,
+      0
+    ],
+    [
+      21,
+      2,
+      862,
+      5,
+      76,
+      0,
+      29,
+      0,
+      5,
+      0
+    ],
+    [
+      21,
+      27,
+      29,
+      874,
+      27,
+      2,
+      16,
+      0,
+      4,
+      0
+    ],
+    [
+      1,
+      1,
+      102,
+      28,
+      832,
+      1,
+      31,
+      0,
+      4,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      981,
+      0,
+      13,
+      0,
+      6
+    ],
+    [
+      195,
+      8,
+      117,
+      20,
+      150,
+      0,
+      496,
+      0,
+      14,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      27,
+      0,
+      942,
+      0,
+      31
+    ],
+    [
+      1,
+      3,
+      4,
+      2,
+      2,
+      2,
+      0,
+      2,
+      984,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      8,
+      1,
+      32,
+      0,
+      959
+    ]
+  ],
+  "precision_per_class": [
+    0.7874224781990051,
+    0.9489893913269043,
+    0.7594713568687439,
+    0.922914445400238,
+    0.7605118751525879,
+    0.9598825573921204,
+    0.7961476445198059,
+    0.9524772763252258,
+    0.9590643048286438,
+    0.9628514051437378
+  ],
+  "recall_per_class": [
+    0.8889999985694885,
+    0.9860000014305115,
+    0.8619999885559082,
+    0.8740000128746033,
+    0.8320000171661377,
+    0.9810000061988831,
+    0.4959999918937683,
+    0.9419999718666077,
+    0.984000027179718,
+    0.9589999914169312
+  ],
+  "f1_per_class": [
+    0.8351338505744934,
+    0.9671406745910645,
+    0.8074941039085388,
+    0.8977914452552795,
+    0.794651448726654,
+    0.9703263640403748,
+    0.6112138032913208,
+    0.9472096562385559,
+    0.9713721871376038,
+    0.9609218239784241
+  ],
+  "macro_f1": 0.8763254880905151,
+  "reload_max_logit_difference": 0.0,
+  "reload_prediction_matches": 10000,
+  "runtime": {
+    "python": "3.10.11",
+    "torch": "2.8.0+cpu",
+    "torchvision": "0.23.0+cpu",
+    "numpy": "1.26.4"
+  },
+  "evaluation_limit": "Official test split repeatedly evaluated as course validation; no unseen deployment test.",
+  "ai_assistance_disclosed": true
+}
